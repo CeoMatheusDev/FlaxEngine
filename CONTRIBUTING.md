@@ -1,50 +1,67 @@
-# How to contribute to the FlaxEngine
+# Contributing to this fork
 
-For any questions, suggestions or help join our discord!
+Thank you for considering a contribution to the **CeoMatheusDev Flax Engine fork**.
 
-<a href="https://flaxengine.com/discord"><img src="https://discordapp.com/api/guilds/437989205315158016/widget.png"/></a>
+This repository is an unofficial fork of [FlaxEngine/FlaxEngine](https://github.com/FlaxEngine/FlaxEngine). It is not the upstream project, and its issue tracker and pull requests are maintained independently.
 
-Want to see whats planned for Flax?
+## Before contributing
 
-Go check out our [Trello](https://trello.com/b/NQjLXRCP/flax-roadmap).
+1. Read [README.md](README.md) and [LICENSE.md](LICENSE.md).
+2. Make sure you have the rights to submit every part of your proposed change.
+3. Check the existing issues and pull requests for duplicate work.
+4. For substantial changes, open an issue or discussion first so the scope and compatibility can be agreed upon.
+5. Do not submit code or content copied from projects with terms incompatible with the Flax EULA.
 
-## **Found a bug?**
+The Flax Engine EULA governs use of the upstream engine technology. Third-party components may have separate license terms; preserve their notices. The EULA also contains a specific assignment provision for contributions made available to Flax (section 5). A contribution to this fork is not automatically a contribution to the upstream Flax project; do not submit upstream unless you understand and accept the upstream terms.
 
-* Avoid opening any new issues without having checked if your problem has already been reported. If there are no currently open issues that fit your problem's description, feel free to [add it](https://github.com/FlaxEngine/FlaxEngine/issues/new).
+## Development workflow
 
-* When writing an issue make sure to include a clear title and description as well as having filled out all the necessary information, depending on the severity of the issue also include the necessary log files and minidump.
+1. Fork this repository within the Flax GitHub repository network where possible, or create a feature branch if you have write access.
+2. Keep each change focused and use descriptive commit messages.
+3. Follow the existing C++/C# formatting, naming and documentation conventions in the affected directory.
+4. Avoid unrelated formatting changes and generated files.
+5. Add or update tests when behavior changes.
+6. Update documentation when build steps, public APIs, configuration or user-facing behavior changes.
+7. Run the narrowest relevant build and tests before opening a pull request.
+8. Explain the motivation, implementation, compatibility impact and validation performed in the pull request.
 
-* Try to following the given template when writing a new issue if possible.
+## Pull requests
 
-## **Want to contribute?**
-  
-* Fork the FlaxEngine, create a new branch and push your changes there. Then, create a pull request.
-  
-* When creating a PR for fixing an issue/bug make sure to describe as to what led to the fix for better understanding, for small and obvious fixes this is not really needed. 
-  However make sure to mention the relevant issue where it was first reported if possible.
-  
-* For feature PR's the first thing you should evaluate is the value of your contribution, as in, what would it bring to this engine? Is it really required?
-  If its a small change you could preferably suggest it to us on our discord, else feel free to open up a PR for it.
-  
-* Ensure when creating a PR that your contribution is well explained with an adequate description and title.
+A useful pull request includes:
 
-* Generally, good code quality is expected, make sure your contribution works as intended and is appropriately commented where necessary.
+- A concise summary of the problem and proposed change.
+- Relevant issue links, if any.
+- A description of architectural or behavioral changes.
+- Build and test results, including platform and configuration.
+- Notes about compatibility, migration, performance or memory implications where relevant.
+- Screenshots or logs when they materially help review.
 
+Do not claim that a pull request has been accepted by or merged into upstream Flax unless that has actually happened.
 
-Thank you for taking interest in contributing to Flax!
+## Bug reports
 
-## **Common issues**
+When reporting a bug, include:
 
-Below are some common issues that someone working with the FlaxEngine source code might run into. Hopefully some of those issues will get fixed in the future. If you know how, please contribute!
+- Engine commit or release tag.
+- Operating system, architecture and compiler/toolchain versions.
+- Reproduction steps and expected versus actual behavior.
+- Relevant logs, crash dumps or minimal projects, after removing secrets and private data.
 
-* Missing MSVC toolset
-  * Install it through the Visual Studio Installer
-* Building or attaching fails
-  * Run `GenerateProjectFiles.bat`
-  * Rebuild `Flax.Build`
-  * Make sure that there isn't a stray FlaxEngine process running in the background
-  * First start Flax and then attach the C# debugger
-  * Configure the C# FlaxEngine project by going into the project properties, then the debug tab and selecting "Start external program" `Flax\FlaxEngine\Binaries\Editor\Win64\Debug\FlaxEditor.exe`
-    * Then you can also set command line arguments such as `-project "C:\Users\PROFILE\Documents\Flax Projects\FlaxSamples\BasicTemplate"`
-* Git LFS
-  * Push with `git push --no-verify`
+## Security issues
+
+Do not publish exploitable vulnerability details in a public issue. Follow [SECURITY.md](SECURITY.md).
+
+## Common build checks
+
+- Run `GenerateProjectFiles.bat` on Windows or `./GenerateProjectFiles.sh` on Linux.
+- Rebuild the affected target rather than relying on stale generated files.
+- Confirm Git LFS objects are present (`git lfs pull`).
+- Check the repository's CI workflows for the current authoritative validation commands.
+
+## Upstream contributions
+
+If you intend to contribute a patch to the official Flax Engine, use the [upstream repository](https://github.com/FlaxEngine/FlaxEngine) and follow its current contribution process. Read EULA section 5 carefully: the EULA states that contributions made available to Flax are assigned to Flax, subject to the terms in that section.
+
+## Questions
+
+For questions about this fork, open a GitHub issue or discussion in this repository. For licensing questions about Flax Engine, contact Flax through its [official contact page](https://flaxengine.com/contact/).
