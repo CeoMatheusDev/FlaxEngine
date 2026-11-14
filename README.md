@@ -1,136 +1,119 @@
-<img align="left" src="Development/Images/Logo.png" width="100px"/>
-<h1>Flax Engine</h1>
-<a href="https://marketplace.visualstudio.com/items?itemName=Flax.FlaxVS"><img src="https://img.shields.io/badge/vs-extension-green.svg"/></a>
-<a href="https://flaxengine.com/discord"><img src="https://discordapp.com/api/guilds/437989205315158016/widget.png"/></a>
+# Flax Engine — CeoMatheusDev fork
 
-Flax Engine is a high quality modern 3D game engine written in C++ and C#.
-From stunning graphics to powerful scripts, it's designed for fast workflow with many ready-to-use features waiting for you right now. To learn more see the website ([www.flaxengine.com](https://flaxengine.com)).
+[![Visual Studio extension](https://img.shields.io/badge/Visual%20Studio-extension-green.svg)](https://marketplace.visualstudio.com/items?itemName=Flax.FlaxVS)
 
-This repository contains full source code of the Flax Engine (excluding NDA-protected platforms support). Documentation source is also available in a separate repository. Anyone is welcome to contribute or use the modified source in Flax-based games.
+**This repository is an unofficial public fork of [FlaxEngine/FlaxEngine](https://github.com/FlaxEngine/FlaxEngine).** It contains the Flax Engine source code and any changes maintained in this fork. It is not an official Flax Engine repository and is not endorsed by Flax or Wojciech Figat.
 
-# Development
+Flax Engine is a 3D game engine written in C++ and C#. The upstream project website is [flaxengine.com](https://flaxengine.com/).
 
-* [Homepage](https://flaxengine.com)
-* [Dev Blog](https://flaxengine.com/blog)
-* [Documentation](https://docs.flaxengine.com)
-* [Forum](https://forum.flaxengine.com)
-* [Roadmap](https://trello.com/b/NQjLXRCP/flax-roadmap)
+> **Important — proprietary license:** The Flax Engine source code, editor and related content are governed by the [Flax Engine End User License Agreement (EULA)](https://flaxengine.com/licensing/), not by an OSI-approved open-source license. Making this repository public does not remove the EULA's restrictions or grant recipients unrestricted redistribution rights. Read [LICENSE.md](LICENSE.md) before using or distributing this code.
 
-# Screenshots
+## Project links
 
-![pbr-rendering](Development/Images/flax-pic-2.jpg "PBR Rendering and Global Illumination")
-![rendering](Development/Images/flax-pic-1.jpg "Rendering")
-![performance](Development/Images/flax-pic-3.jpg "High Performance")
+- [Upstream repository](https://github.com/FlaxEngine/FlaxEngine)
+- [Flax Engine website](https://flaxengine.com/)
+- [Official documentation](https://docs.flaxengine.com/)
+- [Official forum](https://forum.flaxengine.com/)
+- [Official roadmap](https://trello.com/b/NQjLXRCP/flax-roadmap)
+- [Fork-specific contribution guide](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [Upstream and license notes](UPSTREAM.md)
 
-# Getting started
+## What this fork is
 
-Follow the instructions below to compile and run the engine from source.
+- A GitHub fork in the Flax Engine repository network, intended for changes that remain subject to the EULA.
+- A place to maintain and review fork-specific changes.
+- Not a replacement for the upstream project, its support channels, or its official releases.
+- Not a grant to relicense Flax Engine under MIT, BSD, Apache-2.0, GPL, or another license.
 
-## Windows
+Fork-specific changes should be clearly described in commits and pull requests. Unless explicitly stated otherwise, upstream functionality, names, notices, and third-party components retain their original ownership and licensing.
 
-* Install Visual Studio 2026 or newer
-* Install Windows 10 SDK or newer (via Visual Studio Installer)
-* Install Microsoft Visual C++ 2015 v140 toolset or newer (via Visual Studio Installer)
-* Install .NET 10 SDK (or newer) for **Windows x64** (via Visual Studio Installer or [from web](https://dotnet.microsoft.com/en-us/download/dotnet/10.0))
-* Install Git with LFS
-* Clone repo (with LFS)
-* Run **GenerateProjectFiles.bat**
-* Open `Flax.slnx` and set solution configuration to **Editor.Development** and solution platform to **Win64**
-* Set Flax (C++) or FlaxEngine (C#) as startup project
-* Compile Flax project (hit F7 or CTRL+Shift+B)
-* Optionally set Debug Type to **Managed Only (.NET Core)** to debug C#-only, or **Mixed (.NET Core)** to debug both C++ and C#
-* Run Flax (hit F5 key)
+## Screenshots
 
-## Linux
+![PBR rendering](Development/Images/flax-pic-2.jpg "PBR Rendering and Global Illumination")
+![Rendering](Development/Images/flax-pic-1.jpg "Rendering")
+![Performance](Development/Images/flax-pic-3.jpg "High Performance")
 
-* Install Visual Studio Code
-* Install .NET 10 SDK (or newer) ([https://dotnet.microsoft.com/en-us/download/dotnet/10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0))
-  * Ubuntu: `sudo apt install dotnet-sdk-10.0`
-  * Fedora: `sudo dnf install dotnet-sdk-10.0`
-  * Arch: `sudo pacman -S dotnet-sdk-10.0 dotnet-runtime-10.0 dotnet-targeting-pack-10.0 dotnet-host`
-* Install Vulkan SDK ([https://vulkan.lunarg.com/](https://vulkan.lunarg.com/))
-  * Ubuntu: `sudo apt install vulkan-sdk` (deprecated, follow official docs)
-  * Fedora: `sudo dnf install vulkan-headers vulkan-tools vulkan-validation-layers`
-  * Arch: `sudo pacman -S vulkan-headers vulkan-tools vulkan-validation-layers`
-* Install Git with LFS
-  * Ubuntu: `sudo apt-get install git git-lfs`
-  * Arch: `sudo pacman -S git git-lfs`
-  * `git-lfs install`
-* Install the required packages:
-  * Ubuntu: `sudo apt-get install libx11-dev libxcursor-dev libxinerama-dev zlib1g-dev`
-  * Fedora: `sudo dnf install libX11-devel libXcursor-devel  libXinerama-devel ghc-zlib-devel`
-  * Arch: `sudo pacman -S base-devel libx11 libxcursor libxinerama zlib`
-* Install Clang compiler (version 14 or later):
-  * Ubuntu: `sudo apt-get install clang lldb lld`
-  * Fedora: `sudo dnf install clang llvm lldb lld`
-  * Arch: `sudo pacman -S clang lldb lld`
-* Clone the repository (with LFS)
-  * git-lfs clone https://github.com/FlaxEngine/FlaxEngine.git
-* Run `./GenerateProjectFiles.sh`
-* Open workspace with Visual Code
-* Build and run (configuration and task named `Flax|Editor.Linux.Development|x64`)
+## Getting started
 
-## Mac
+Follow the instructions below to compile and run the engine from source. These are the upstream build instructions; check the official documentation and the current CI configuration if a toolchain requirement changes.
 
-* Install XCode 16.4 (or newer)
-* Install .NET 10 SDK (or newer) ([https://dotnet.microsoft.com/en-us/download/dotnet/10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0))
-* Install Vulkan SDK ([https://vulkan.lunarg.com/](https://vulkan.lunarg.com/))
-* Clone repo (with LFS)
-* Run `GenerateProjectFiles.command`
-* Open workspace with XCode or Visual Studio Code
-* Build and run (configuration `Editor.Mac.Development`)
+### Windows
 
-## Troubleshooting
+1. Install Visual Studio 2026 or newer.
+2. Install the Windows 10 SDK or newer through Visual Studio Installer.
+3. Install the Microsoft Visual C++ 2015 v140 toolset or newer.
+4. Install the .NET 10 SDK or newer for Windows x64.
+5. Install Git with Git LFS and run `git lfs install`.
+6. Clone this repository with LFS files.
+7. Run `GenerateProjectFiles.bat`.
+8. Open `Flax.slnx`; select solution configuration `Editor.Development` and platform `Win64`.
+9. Set `Flax` (C++) or `FlaxEngine` (C#) as the startup project.
+10. Build and run the editor.
 
-* `Could not execute because the specified command or file was not found.`
+### Linux
 
-Restart PC - ensure DotNet is added to PATH for command line tools execution.
+Install the .NET 10 SDK, Vulkan development files, Git LFS, X11 development headers and Clang.
 
-* `Microsoft.NET.TargetFrameworkInference.targets(141,5): error NETSDK1045: The current .NET SDK does not support targeting .NET 10.0.  Either target .NET 5.0 or lower, or use a version of the .NET SDK that supports .NET 10.0`
+Fedora:
 
-Use Visual Studio 2026 (or newer), old Visual Studio versions are not supported by .NET SDK 10.
+```bash
+sudo dnf install dotnet-sdk-10.0 \
+  vulkan-headers vulkan-tools vulkan-validation-layers \
+  git git-lfs libX11-devel libXcursor-devel libXinerama-devel \
+  zlib-ng-compat-devel clang llvm lldb lld
+git lfs install
+```
 
-* `Building for Windows without Vulkan rendering backend (Vulkan SDK is missing)`
+Ubuntu/Debian and Arch package names differ; consult the distribution documentation for the equivalent packages. Install the [Vulkan SDK](https://vulkan.lunarg.com/) where required by your build configuration.
 
-Install the Vulkan SDK then set an environment variable to provide the path to the SDK prior to running GenerateProjectFiles.bat: `set VULKAN_SDK=%sdk_path%`.
+Clone with LFS, generate project files, then build using the generated VS Code task:
 
-* `The NuGetSdkResolver did not resolve this SDK` / `Could not resolve SDK "Microsoft.NET.Sdk"`
+```bash
+git clone https://github.com/CeoMatheusDev/FlaxEngine.git
+cd FlaxEngine
+git lfs pull
+./GenerateProjectFiles.sh
+```
 
-Install `.NET SDK` 10, `NuGet package manager` and `NuGet targets and build tasks` in Visual Studio components.
+Use the `Flax|Editor.Linux.Development|x64` build task in Visual Studio Code.
 
-## Workspace directory
+### macOS
 
-- **Binaries/** - executable files
-  - **Editor/** - Flax Editor binaries
-  - **Tools/** - tools binaries
-- **Cache/** - local data cache folder used by the engine and tools
-  - **Intermediate/** - intermediate files and cache for engine build
-    - ***ProjectName*/** - per-project build cache data
-    - **Deps/** - Flax.Build dependencies building cache
-  - **Projects/** - project files location
-- **Content/** - assets and binary files used by the engine and editor
-- **Development/** - engine development files
-  - **Scripts/** - utility scripts
-- **Source/** - source code location
-  - **Editor/** - Flax Editor source code
-  - **Engine/** - Flax Engine source code
-  - **Platforms/** - per-platform sources and dependency files
-    - **DotNet/** - C# dependencies
-    - **Editor/** - Flax Editor binaries
-    - ***PlatformName*/** - per-platform files
-      - **Binaries/** - per-platform binaries
-        - **Game/** - Flax Game binaries
-        - **ThirdParty/** - prebuilt 3rd Party binaries
-  - **Shaders/** - shaders source code
-  - **ThirdParty/** - 3rd Party source code
-  - **Tools/** - development tools source code
+Install Xcode 16.4 or newer, the .NET 10 SDK or newer, the Vulkan SDK, and Git LFS. Clone this repository with LFS, run `GenerateProjectFiles.command`, then build the `Editor.Mac.Development` configuration in Xcode or Visual Studio Code.
 
-# Licensing and Contributions
+## Repository layout
 
-Using Flax source code is strictly governed by the Flax Engine End User License Agreement. If you don't agree to those terms, as amended from time to time, you are not permitted to access or use Flax Engine.
+- `Binaries/` — executable files, including Editor and tool binaries.
+- `Cache/` — local build and tool caches; normally generated locally.
+- `Content/` — assets and binary content used by the engine and editor.
+- `Development/` — development resources and helper scripts.
+- `Source/Editor/` — editor source code.
+- `Source/Engine/` — engine source code.
+- `Source/Platforms/` — platform-specific code, dependencies and binaries.
+- `Source/Shaders/` — shader sources.
+- `Source/ThirdParty/` — third-party components and their license notices.
+- `Source/Tools/` — build and development tools.
 
-We welcome any contributions to Flax Engine development through pull requests on GitHub. Most of our active development is in the master branch, so we prefer to take pull requests there (particularly for new features). We try to make sure that all new code adheres to the Flax coding standards. All contributions are governed by the terms of the [EULA](https://flaxengine.com/licensing/).
+## Licensing and required notices
 
-## SAST Tools
+Use of Flax Engine is conditional on the [Flax Engine EULA](https://flaxengine.com/licensing/). In particular:
 
-[PVS-Studio](https://pvs-studio.com/en/pvs-studio/?utm_source=website&utm_medium=github&utm_campaign=open_source) - static analyzer for C, C++, C#, and Java code.
+1. **Source and tools distribution:** public distribution of Engine Tools and modified Engine Tools must use the channels specified by the EULA. For public source distribution, the EULA identifies a fork in Flax's GitHub network. Other distribution is limited to the recipients and conditions described in the EULA.
+2. **Product release notification:** before generating revenue from a Product or distributing it to end users, the EULA requires advance notification to Flax through [flaxengine.com/release](https://flaxengine.com/release).
+3. **Royalties:** the standard EULA generally requires 4% of worldwide gross revenue attributable to each Product above the first US$250,000 per Product per calendar quarter, subject to the exclusions and reporting rules in the EULA. Reports and payments are generally due within 45 days after the applicable quarter.
+4. **Product credits:** retain the proprietary notices in the source and content. Product credits must include the notices required by EULA section 6, with the year updated for the release:
+   `[Product name] uses the Flax Engine`
+   `Flax Engine, Copyright 2012 – [current year], Wojciech Figat. All rights reserved.`
+5. **Third-party software:** individual components may have separate licenses. Preserve their notices and comply with each component's license. Do not assume the Flax EULA replaces third-party terms.
+6. **License compatibility:** the EULA restricts combining Flax technology with certain non-compatible licenses. Review section 1(C) before adding dependencies or redistributing combined work.
+
+The EULA may change. Always consult the current official text rather than relying solely on this summary. This README is informational and is not legal advice.
+
+## Contributing
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request. Contributions to this fork must respect the EULA and all applicable third-party licenses. Submitting a change to this fork is not the same as submitting it to the upstream Flax project; the EULA contains a separate assignment provision for contributions made available to Flax.
+
+## Disclaimer
+
+“Flax” and “Flax Engine” are used only to identify the upstream technology on which this repository is based. All applicable trademarks and intellectual property remain with their respective owners. This fork is independently maintained and is not an official Flax release.
