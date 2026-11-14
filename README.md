@@ -1,4 +1,4 @@
-# Flax Engine — CeoMatheusDev fork
+# Flax Engine — Hardion Labs fork
 
 [![Visual Studio extension](https://img.shields.io/badge/Visual%20Studio-extension-green.svg)](https://marketplace.visualstudio.com/items?itemName=Flax.FlaxVS)
 
