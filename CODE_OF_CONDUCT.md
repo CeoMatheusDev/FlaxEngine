@@ -1,52 +1,43 @@
-# Contributor Covenant Code of Conduct
+# Code of Conduct
 
-## Our Pledge
+## Our pledge
 
-In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+We are committed to making participation in this repository a respectful and harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-## Our Standards
+## Expected behavior
 
-Examples of behavior that contributes to creating a positive environment include:
+Examples of behavior that contributes to a positive environment include:
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+- Using welcoming and inclusive language.
+- Being respectful of differing viewpoints and experiences.
+- Accepting constructive criticism gracefully.
+- Focusing on what is best for the project and its community.
+- Showing empathy toward other community members.
 
-Examples of unacceptable behavior by participants include:
+Examples of unacceptable behavior include:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a professional setting
-
-## Our Responsibilities
-
-Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
-
-Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+- Sexualized language or imagery, and unwelcome sexual attention or advances.
+- Trolling, insults, derogatory comments, and personal or political attacks.
+- Public or private harassment.
+- Publishing another person's private information without explicit permission.
+- Conduct that would reasonably be considered inappropriate in a professional setting.
 
 ## Scope
 
-This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
+This Code of Conduct applies in repository spaces, including issues, pull requests, discussions and project-controlled communication channels. It also applies in public spaces when someone is representing this fork or its community.
+
+This repository is an unofficial fork and is not operated by the upstream Flax Engine team. Reports concerning upstream-owned spaces should be sent to the upstream maintainers.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at contact@flaxengine.com. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+Project maintainers may remove, edit or reject comments, commits and other contributions that violate this Code of Conduct. They may temporarily or permanently restrict participation where appropriate.
 
-Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
+To report abusive behavior, contact the repository owner through their GitHub profile. Reports will be reviewed as confidentially as reasonably possible.
 
 ## Contribution
 
-Using Flax source code is strictly governed by the Flax Engine End User License Agreement. If you don't agree to those terms, as amended from time to time, you are not permitted to access or use Flax Engine.
-
-We welcome any contributions to Flax Engine development through pull requests on GitHub. Most of our active development is in the master branch, so we prefer to take pull requests there (particularly for new features). We try to make sure that all new code adheres to the Flax coding standards. All contributions are governed by the terms of the [EULA](https://flaxengine.com/licensing/).
+By participating in this repository, you agree to follow this Code of Conduct. Contributions must also comply with [LICENSE.md](LICENSE.md), the Flax Engine EULA and all applicable third-party licenses.
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [http://contributor-covenant.org/version/1/4][version]
-
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+This policy is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 1.4.
