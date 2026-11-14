@@ -1,23 +1,36 @@
-# Licensing
+# Licensing of this repository
 
-This repository contains source code and content from **Flax Engine**. Use of the Flax Engine source code, editor, tools and related content is governed by the **Flax Engine End User License Agreement (EULA)**:
+This repository contains Flax Engine technology and may also contain independently authored Hardion Labs materials. Different materials are governed by different terms; **no single license applies to the entire repository**.
 
-- [Official Flax Engine EULA](https://flaxengine.com/licensing/)
-- [EULA PDF](https://flaxengine.com/wp-content/uploads/2017/11/Flax%20EULA.pdf)
+## Flax Engine technology
 
-The EULA is proprietary and is **not** an MIT, BSD, Apache-2.0, GPL, or other general-purpose open-source license. This file is a pointer to the governing terms; it does not replace, modify, or grant additional rights under the EULA.
+Use of Flax Engine source code, Engine Tools, Content and modifications of those materials is governed by the **Flax Engine End-User License Agreement (EULA)**:
+
+- [Official Flax Engine EULA and licensing page](https://flaxengine.com/licensing/)
+- [Official EULA PDF](https://flaxengine.com/wp-content/uploads/2017/11/Flax%20EULA.pdf)
+
+The EULA is proprietary and is not an MIT, BSD, Apache-2.0, GPL or other general-purpose open-source license. This file is a licensing notice and pointer; it does not reproduce, replace, amend or expand the EULA.
+
+## Hardion Labs original materials
+
+Only materials expressly identified as covered by the **Hardion Labs Original Materials License 1.0 (HLOML-1.0)** are licensed under that separate license:
+
+- [Hardion Labs Original Materials License 1.0](LICENSE-HARDION.md)
+- [Scope, identification and compatibility policy](docs/LICENSING.md)
+
+The Hardion Labs license does not apply to Flax Engine code, Flax Content, upstream assets, trademarks, third-party components, or unmarked/unlisted files. It does not grant rights to redistribute or relicense Flax technology.
+
+## Third-party components
+
+Third-party software and content retain their own licenses. Preserve their copyright notices, license texts and attribution requirements, particularly in `Source/ThirdParty/`. The Flax EULA does not replace third-party license terms.
 
 ## Important
 
-- You must accept and comply with the EULA to access or use the Flax Engine technology.
-- Public distribution of Engine Tools and modified Engine Tools is subject to the specific distribution channels and recipient restrictions in EULA section 1(A).
+- Accept and comply with the current Flax EULA before accessing or using Flax Engine technology.
+- Public distribution of Engine Tools and modified Engine Tools is subject to the distribution channels and recipient restrictions in EULA section 1(A).
 - Product distribution and monetization may require advance notification, royalty reporting and royalty payments. See EULA sections 1(A) and 3.
-- Required Flax copyright, trademark and product-credit notices must be retained. See EULA section 6.
-- The EULA restricts combinations with certain non-compatible licenses. Review section 1(C) before adding dependencies or redistributing combined work.
-- Third-party components retain their own licenses. Preserve and follow notices shipped alongside those components, especially under `Source/ThirdParty/`.
+- Retain Flax copyright, trademark and product-credit notices. See EULA section 6.
+- Review EULA section 1(C) before combining Flax technology with other licensed materials.
+- Review EULA section 5 before making any contribution available to Flax.
 
-## No relicensing
-
-Nothing in this repository's README, contribution guide, or other documentation relicenses Flax Engine or grants permission to distribute it under a different license. Do not add a root-level permissive license badge or represent the engine as unrestricted open source.
-
-This summary is informational, may become outdated, and is not legal advice. The official EULA controls.
+The official EULA controls if this summary conflicts with it. License terms can change. This notice is informational and is not legal advice.

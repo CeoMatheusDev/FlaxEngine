@@ -18,6 +18,8 @@ Flax Engine is a 3D game engine written in C++ and C#. The upstream project webs
 - [Fork-specific contribution guide](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
 - [Upstream and license notes](UPSTREAM.md)
+- [Hardion Labs license](LICENSE-HARDION.md)
+- [Detailed licensing policy](docs/LICENSING.md)
 
 ## What this fork is
 
@@ -97,18 +99,26 @@ Install Xcode 16.4 or newer, the .NET 10 SDK or newer, the Vulkan SDK, and Git L
 
 ## Licensing and required notices
 
-Use of Flax Engine is conditional on the [Flax Engine EULA](https://flaxengine.com/licensing/). In particular:
+This repository contains material under **separate, clearly scoped licensing terms**. There is no blanket license that relicenses the entire repository.
 
-1. **Source and tools distribution:** public distribution of Engine Tools and modified Engine Tools must use the channels specified by the EULA. For public source distribution, the EULA identifies a fork in Flax's GitHub network. Other distribution is limited to the recipients and conditions described in the EULA.
-2. **Product release notification:** before generating revenue from a Product or distributing it to end users, the EULA requires advance notification to Flax through [flaxengine.com/release](https://flaxengine.com/release).
-3. **Royalties:** the standard EULA generally requires 4% of worldwide gross revenue attributable to each Product above the first US$250,000 per Product per calendar quarter, subject to the exclusions and reporting rules in the EULA. Reports and payments are generally due within 45 days after the applicable quarter.
-4. **Product credits:** retain the proprietary notices in the source and content. Product credits must include the notices required by EULA section 6, with the year updated for the release:
+- **Flax Engine technology:** governed by the [official Flax Engine EULA](https://flaxengine.com/licensing/). The EULA applies to Flax Engine source code, Engine Tools, Content and modifications of those materials.
+- **Hardion Labs original materials:** only files expressly identified as covered by the [Hardion Labs Original Materials License 1.0](LICENSE-HARDION.md) are covered by that license. The scope and file-identification rules are documented in [docs/LICENSING.md](docs/LICENSING.md).
+- **Third-party components:** remain under their respective licenses and notices, including materials under `Source/ThirdParty/`.
+
+The Hardion Labs license does **not** apply to Flax-owned code, Flax Content, upstream assets, trademarks, third-party components, or files that are not expressly marked or listed as covered. It does not amend, replace, sublicense, or waive any requirement of the Flax EULA.
+
+Important Flax EULA requirements include:
+
+1. **Source and tools distribution:** public distribution of Engine Tools and modified Engine Tools must follow the channels specified by EULA section 1(A), including the Flax GitHub fork network for public source distribution.
+2. **Product release notification:** before generating revenue from a Product or distributing it to end users, advance notification may be required through [flaxengine.com/release](https://flaxengine.com/release).
+3. **Royalties:** the standard EULA generally requires 4% of worldwide gross revenue attributable to each Product above the first US$250,000 per Product per calendar quarter, subject to its exclusions and reporting rules.
+4. **Product credits:** retain Flax proprietary notices and include the credits required by EULA section 6:
    `[Product name] uses the Flax Engine`
    `Flax Engine, Copyright 2012 – [current year], Wojciech Figat. All rights reserved.`
-5. **Third-party software:** individual components may have separate licenses. Preserve their notices and comply with each component's license. Do not assume the Flax EULA replaces third-party terms.
-6. **License compatibility:** the EULA restricts combining Flax technology with certain non-compatible licenses. Review section 1(C) before adding dependencies or redistributing combined work.
+5. **Contributions to Flax:** EULA section 5 contains an assignment provision for Contributions made available to Flax. Review it before submitting any work to the upstream project.
+6. **Compatibility:** review EULA section 1(C) before combining Flax technology with other licensed code or content.
 
-The EULA may change. Always consult the current official text rather than relying solely on this summary. This README is informational and is not legal advice.
+The EULA can change. The current official text controls over this summary. See [docs/LICENSING.md](docs/LICENSING.md). This README is informational and is not legal advice.
 
 ## Contributing
 

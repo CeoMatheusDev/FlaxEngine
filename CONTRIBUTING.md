@@ -14,6 +14,14 @@ This repository is an unofficial fork of [FlaxEngine/FlaxEngine](https://github.
 
 The Flax Engine EULA governs use of the upstream engine technology. Third-party components may have separate license terms; preserve their notices. The EULA also contains a specific assignment provision for contributions made available to Flax (section 5). A contribution to this fork is not automatically a contribution to the upstream Flax project; do not submit upstream unless you understand and accept the upstream terms.
 
+## Licensing of contributions to this fork
+
+Submitting a change to this repository does not, by itself, transfer copyright ownership to CeoMatheusDev or Hardion Labs.
+
+A contribution may be designated under the [Hardion Labs Original Materials License 1.0](LICENSE-HARDION.md) only when the contributor has the necessary rights and explicitly marks or lists the relevant files as covered, as described in [docs/LICENSING.md](docs/LICENSING.md). Do not apply that license to Flax Engine code, upstream assets, or third-party material.
+
+If you make a contribution available to the upstream Flax project (including through its GitHub network, forums, Discord, or email), review EULA section 5 first. The upstream EULA contains a contribution assignment provision. Do not submit work on behalf of another person or organization without authority to do so.
+
 ## Development workflow
 
 1. Fork this repository within the Flax GitHub repository network where possible, or create a feature branch if you have write access.
